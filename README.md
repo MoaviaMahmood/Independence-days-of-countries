@@ -1,6 +1,8 @@
 # Data Analysis of Independence days of countries
 
-### 1. Total Number of Countries
+### 1. Total Countries
+
+Total number of countries in dataset
 
 ```sql
   select count(country)countries
