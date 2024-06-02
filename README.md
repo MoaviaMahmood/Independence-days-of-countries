@@ -81,12 +81,12 @@ Countries gain independence in 20th century
 	order by year;
 ```
 
-![4 1](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/7f678f26-cdaa-4f0b-8a7f-e1dfd2a551c5)
-![4 2](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/e056ff73-e36f-496c-bb4c-0454591db1e2)
-![4 3](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/b27f0bdf-bd95-489a-880a-4ddd0f57c04b)
-![4 6](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/75e5907a-7a21-4069-97e9-772a309e2b66)
-![4 4](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/277cd672-1154-49ca-8ded-ccdbff299c37)
-![4 5](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/68e78505-58ed-4164-a65d-02d69362acf0)
+![4 1](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/dadbd9ec-79c1-42eb-a618-e11cbf7f5ab8)
+![4 2](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/8657a646-6617-4c49-ad4b-ab45c22ebdc2)
+![4 3](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/8ac42d41-7b55-4d9b-b218-d7e95809a40a)
+![4 4](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/c2d65cc8-3e72-47f8-b61f-7732e15fb9cd)
+![4 5](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/9efd8bbc-67be-4d30-bcd3-d98c54a6d500)
+
 
 
 
