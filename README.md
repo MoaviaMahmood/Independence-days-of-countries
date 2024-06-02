@@ -48,7 +48,19 @@ Number of Countries independence per month
 
 ![03](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/4ad0b5e7-e436-4ce2-9809-66a2cabc900f)
 
-### 4. 20th Century Independence
+### 4. Earliest Independent Countries
+Top 10 earliest countries to get independence
+
+```sql
+  select top (10)*
+  from independence_data
+  where year not like 'NA'
+  order by year asc;
+```
+![5](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/fd41ae02-18e3-41a6-ac46-f092b4e5aed3)
+
+
+### 5. 20th Century Independence
 Countries gain independence in 20th century  
 
 ```sql
