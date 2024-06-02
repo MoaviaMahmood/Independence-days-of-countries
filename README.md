@@ -18,8 +18,8 @@ The dataset includes the following columns:
 Total number of countries in dataset
 
 ```sql
-	select count(country) countries
-	from independence_data;
+select count(country) countries
+from independence_data;
 ```
 
 ![01](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/c60c1ae1-b0e9-4fb4-a57a-1c0238ae1aed)
@@ -28,10 +28,10 @@ Total number of countries in dataset
 Number of countries per contries in dataset 
 
 ```sql
-	SELECT continent AS Continent,
-		COUNT(*) AS Countries
-	FROM independence_data
-	GROUP BY continent;
+SELECT continent AS Continent,
+	COUNT(*) AS Countries
+FROM independence_data
+GROUP BY continent;
 ```
 
 ![02](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/b6040454-2fb8-491d-a75e-6e89167528e9)
@@ -40,11 +40,11 @@ Number of countries per contries in dataset
 Number of Countries independence per month 
 
 ```sql
-	select month,
-		count(country) as countries
-	from independence_data
-	group by month
-	order by countries desc;
+select month,
+	count(country) as countries
+from independence_data
+group by month
+order by countries desc;
 ```
 
 ![03](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/4ad0b5e7-e436-4ce2-9809-66a2cabc900f)
@@ -53,10 +53,10 @@ Number of Countries independence per month
 Top 10 earliest countries to get independence
 
 ```sql
-	select top (10)*
-	from independence_data
-	where year not like 'NA'
-	order by year asc;
+select top (10)*
+from independence_data
+where year not like 'NA'
+order by year asc;
 ```
 ![5](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/fd41ae02-18e3-41a6-ac46-f092b4e5aed3)
 
@@ -64,14 +64,72 @@ Top 10 earliest countries to get independence
 Top 10 latest countries to get independence
 
 ```sql
-	select *
-	from independence_data
-	where year like '20%'
-	order by year desc;
+select *
+from independence_data
+where year like '20%'
+order by year desc;
 ```
 ![6](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/7f929530-5aab-487a-9084-d50e4b98dedf)
 
-## 6. 20th Century Independence
+## 6. Colonial Powers
+Top 10 colonial powers in the world 
+
+```sql
+SELECT top (10)
+    independence_from AS Colonial_Power, 
+    COUNT(*) AS CountryCount
+FROM 
+    independence_data
+where independence_from not like 'NA' 
+GROUP BY 
+    independence_from
+order by
+	CountryCount desc;
+```
+![7](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/7e78b3bc-acfb-42f2-89ed-b31728ab1f66)
+
+## 7. Independence Per Century
+Number of Countries gain independence per century  
+
+```sql
+SELECT 
+    (Year/100)*100 AS Decade, 
+    COUNT(*) AS CountryCount
+FROM 
+    independence_data
+where year not like 'NA'
+GROUP BY 
+    (Year/100)*100
+ORDER BY 
+    Decade desc;
+```
+![8](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/78dd7a6a-e9c2-46da-bc61-99eaa9721f0c)
+
+## 8. Independence from UK
+Number of Countries gain independence from United Kingdom  
+
+```sql
+select *
+from independence_data
+where independence_from like 'United Kingdom'
+order by year;
+```
+![9 1](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/7e1a5791-bd1c-4881-97c4-d4d22af43f1e)
+![9 2](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/12e41b05-ef04-486f-afa8-2c15dee8914b)
+
+## 8. Independence in August
+Countries gain independence in August 
+
+```sql
+select *
+from independence_data
+where month like 'August'
+order by year;
+```
+![10](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/2d3638d2-33c8-485b-966b-3e91b7cc0e3c)
+
+
+## 10. 20th Century Independence
 Countries gain independence in 20th century  
 
 ```sql
