@@ -1,8 +1,11 @@
 # Data Analysis of Independence days of countries
 
+### Total Number of Countries
+
 ```sql
-  SELECT 
-      COUNT(order_id) AS Total_Orders
-  FROM
-      orders;
+  select count(country)countries
+  from independence_data;
 ```
+
+![01](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/c60c1ae1-b0e9-4fb4-a57a-1c0238ae1aed)
+
