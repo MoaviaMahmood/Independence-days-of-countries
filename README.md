@@ -1,8 +1,8 @@
 # Data Analysis of Independence days of countries
-
+## Description
 This repository contains an analysis of countries' independence data, focusing on various dimensions such as the year of independence, continent, and colonial powers. The dataset provides valuable insights into historical trends and geopolitical shifts. Below is an outline of the key analyses and SQL queries performed.
 
-## Dataset Description
+## Dataset
 The dataset includes the following columns:
 
 1. Country: Name of the country.
@@ -12,62 +12,73 @@ The dataset includes the following columns:
 5. Day: The specific day of independence.
 6. Independence from: The colonial power from which the country gained independence
 
-## Data Analysis
+# Data Analysis
 
-### 1. Total Countries
+## 1. Total Countries
 Total number of countries in dataset
 
 ```sql
-  select count(country)countries
-  from independence_data;
+	select count(country) countries
+	from independence_data;
 ```
 
 ![01](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/c60c1ae1-b0e9-4fb4-a57a-1c0238ae1aed)
 
-### 2. Countries Per Continent
+## 2. Countries Per Continent
 Number of countries per contries in dataset 
 
 ```sql
-  SELECT continent AS Continent, COUNT(*) AS Countries
-  FROM     independence_data
-  GROUP BY continent;
+	SELECT continent AS Continent,
+		COUNT(*) AS Countries
+	FROM independence_data
+	GROUP BY continent;
 ```
 
 ![02](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/b6040454-2fb8-491d-a75e-6e89167528e9)
 
-### 3. Independence Per Month
+## 3. Independence Per Month
 Number of Countries independence per month 
 
 ```sql
-  select month,
+	select month,
 		count(country) as countries
-  from independence_data
-  group by month
-  order by countries desc;
+	from independence_data
+	group by month
+	order by countries desc;
 ```
 
 ![03](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/4ad0b5e7-e436-4ce2-9809-66a2cabc900f)
 
-### 4. Earliest Independent Countries
+## 4. Earliest Independent Countries
 Top 10 earliest countries to get independence
 
 ```sql
-  select top (10)*
-  from independence_data
-  where year not like 'NA'
-  order by year asc;
+	select top (10)*
+	from independence_data
+	where year not like 'NA'
+	order by year asc;
 ```
 ![5](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/fd41ae02-18e3-41a6-ac46-f092b4e5aed3)
 
+## 5. Latest Independent Countries
+Top 10 latest countries to get independence
 
-### 5. 20th Century Independence
+```sql
+	select *
+	from independence_data
+	where year like '20%'
+	order by year desc;
+```
+![6](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/7f929530-5aab-487a-9084-d50e4b98dedf)
+
+## 6. 20th Century Independence
 Countries gain independence in 20th century  
 
 ```sql
-  select * 
-  from independence_data
-  where year like '19%'
-  order by year;
+	select * 
+	from independence_data
+	where year like '19%'
+	order by year;
 ```
 
 ![4 1](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/7f678f26-cdaa-4f0b-8a7f-e1dfd2a551c5)
