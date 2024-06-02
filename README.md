@@ -94,7 +94,7 @@ Number of Countries gain independence per century
 
 ```sql
 SELECT 
-    (Year/100)*100 AS Decade, 
+    (Year/100)*100 AS Century, 
     COUNT(*) AS CountryCount
 FROM 
     independence_data
