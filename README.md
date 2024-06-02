@@ -5,12 +5,12 @@ This repository contains an analysis of countries' independence data, focusing o
 ## Dataset Description
 The dataset includes the following columns:
 
-#### Country: Name of the country.
-#### Continent: Continent to which the country belongs.
-#### Year: The year the country gained independence.
-#### Month: The month the country gained independence.
-#### Day: The specific day of independence.
-#### Independence from: The colonial power from which the country gained independence
+#### -Country: Name of the country.
+#### -Continent: Continent to which the country belongs.
+#### -Year: The year the country gained independence.
+#### -Month: The month the country gained independence.
+#### -Day: The specific day of independence.
+#### -Independence from: The colonial power from which the country gained independence
 
 ### 1. Total Countries
 
