@@ -118,7 +118,7 @@ order by year;
 ![9 1](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/7e1a5791-bd1c-4881-97c4-d4d22af43f1e)
 ![9 2](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/12e41b05-ef04-486f-afa8-2c15dee8914b)
 
-## 8. Independence in August
+## 9. Independence in August
 Countries gain independence in August 
 
 ```sql
