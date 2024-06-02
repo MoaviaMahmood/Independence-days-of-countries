@@ -3,6 +3,7 @@
 This repository contains an analysis of countries' independence data, focusing on various dimensions such as the year of independence, continent, and colonial powers. The dataset provides valuable insights into historical trends and geopolitical shifts. Below is an outline of the key analyses and SQL queries performed.
 
 ## Dataset
+
 The dataset includes the following columns:
 
 1. Country: Name of the country.
