@@ -148,5 +148,10 @@ Countries gain independence in 20th century
 
 
 
+# Data Visulization with Power BI
+![bi1](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/7e312e66-ee7b-4c92-ae30-a318a1e62b22)
+![bi2](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/c2d7fcb1-8f99-4647-85f6-508fb6e5841b)
+![bi3](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/43ed19d0-7de9-4558-b446-318dfbe6a6ee)
+![bi4](https://github.com/MoaviaMahmood/Independence-days-of-countries/assets/168455506/83b66b33-67d5-49d4-a278-09b839fd09f2)
 
 
